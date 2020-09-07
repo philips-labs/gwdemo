@@ -14,8 +14,8 @@ The following information is required:
 
 - `cf_api_url` -- Cloud foundry API URL of the region
 - `cf_username` -- Cloud foundry username
-- CF password -- Cloud foundry password
-- CF organization name -- Cloud foundry ORG name. Usually starts with `client-...`
+- `cf_password` -- Cloud foundry password
+- `cf_org_name` -- Cloud foundry ORG name. Usually starts with `client-...`
 
 There are severals ways let Terraform know about these values. You can create `terraform.tfvar` (any `.tfvar`) that looks like this:
 
@@ -29,8 +29,8 @@ cf_org_name = "client-cf-org"
 Or you can pas them as environment variables:
 
 ```bash
-$ export TF_VAR_api_url=https://api.cloud.pcftest.com
-$ export TF_VAR_username=alastname
+$ export TF_VAR_cf_api_url=https://api.cloud.pcftest.com
+$ export TF_VAR_cf_username=alastname
 ...
 $ terraform init
 $ terraform plan
