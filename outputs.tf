@@ -1,5 +1,5 @@
 output "gw_url" {
-  value = module.api_gateway.url
+  value = "https://${module.api_gateway.url}"
 }
 
 output "cf_space" {

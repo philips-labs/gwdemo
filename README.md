@@ -39,3 +39,23 @@ $ terraform plan
 ## terraform-cloudfoudry-gwdemo
 
 All of the details are captured in a [Terraform module](https://www.terraform.io/docs/modules/index.html). We want to dive into using modules immediately as that unlocks one of the more powerful aspects of using Terraform: reusable components. Head over to the [terraform-cloudfoudry-gwdemo](https://github.com/philips-labs/terraform-cloudfoundry-gwdemo) repository to examine the module.
+
+# applying
+
+```bash
+$ terraform init
+...
+$ terraform plan
+...
+$ terraform apply
+...
+Apply complete! Resources: 13 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+cf_org = client-cf-org
+cf_space = gwdemo-0305fc1e2e423ecd
+gw_url = https://api-gateway-0305fc1e2e423ecd.us-east.philips-healthsuite.com
+```
+
+The `apply` step should take about a minute to complete.
