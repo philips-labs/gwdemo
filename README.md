@@ -8,19 +8,20 @@ Internal services are also not restricted to HTTP only. Any TCP/UDP port can be 
 
 # terraform-cloudfoudry-gwdemo
 
-All of the details are captured in a [Terraform module](https://www.terraform.io/docs/modules/index.html). We want to dive into using modules immediately as that unlocks one of the more powerful aspects of using Terraform: reusable components. 
-You may want to head over to the [terraform-cloudfoudry-gwdemo](https://github.com/philips-labs/terraform-cloudfoundry-gwdemo) repository first to dive into the details. Alternatively, you can follow the rest of README and deploy the gwdemo immediately and afterwards examine the module.
+The bulk of the resources we need to provision are declared in a [Terraform module](https://www.terraform.io/docs/modules/index.html). Introduce Terraform modules unlocks one of the more powerful aspects of using Terraform: reusable components. 
+
+You may want to head over to the [terraform-cloudfoudry-gwdemo](https://github.com/philips-labs/terraform-cloudfoundry-gwdemo) repository first to dive into the details. Alternatively, you can follow the rest of this README and deploy the gwdemo environment first and afterwards examine the module contents.
 
 # requirements
 
-In order to deploy this demo you need to be onboarded to use HSDP Cloud foundry services an have `OrgAdmin` privileges. 
+In order to deploy this demo you need to be onboarded onto HSDP Cloud foundry services an have `OrgAdmin` privileges.
 Future versions of this demo will be `SpaceDeveloper` friendly. See the [hsdp.io](https://hsdp.io) portal for details. 
 The following information is required:
 
-- `cf_api_url` -- Cloud foundry API URL of the region
-- `cf_username` -- Cloud foundry username
-- `cf_password` -- Cloud foundry password
-- `cf_org_name` -- Cloud foundry ORG name. Usually starts with `client-...`
+- `cf_api_url` -- Cloud foundry API URL of the region e.g. https://api.eu1.phsdp.com
+- `cf_username` -- Your Cloud foundry username
+- `cf_password` -- Your Cloud foundry password
+- `cf_org_name` -- Your Cloud foundry ORG name. Usually starts with `client-...`
 
 There are severals ways to let Terraform know about these values. You can create `terraform.tfvar` (any `.tfvar` file really) that looks like this:
 
