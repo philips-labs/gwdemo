@@ -8,7 +8,7 @@ Internal services are also not restricted to HTTP only. Any TCP/UDP port can be 
 
 # terraform-cloudfoudry-gwdemo
 
-The bulk of the resources we need to provision are declared in a [Terraform module](https://www.terraform.io/docs/modules/index.html). Introduce Terraform modules unlocks one of the more powerful aspects of using Terraform: reusable components. 
+The bulk of the resources we need to provision are declared in a [Terraform module](https://www.terraform.io/docs/modules/index.html). Introducing Terraform modules unlocks one of the more powerful aspects of using Terraform: reusable components. 
 
 You may want to head over to the [terraform-cloudfoudry-gwdemo](https://github.com/philips-labs/terraform-cloudfoundry-gwdemo) repository first to dive into the details. Alternatively, you can follow the rest of this README and deploy the gwdemo environment first and afterwards examine the module contents.
 
