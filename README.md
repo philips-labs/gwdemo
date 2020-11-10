@@ -23,7 +23,7 @@ The following information is required:
 - `cf_password` -- Your Cloud foundry password
 - `cf_org_name` -- Your Cloud foundry ORG name. Usually starts with `client-...`
 
-There are severals ways to let Terraform know about these values. You can create `terraform.tfvars` (any `.tfvars` file really) that looks like this:
+There are severals ways to let Terraform know about these values. You can create `terraform.tfvars` that looks like this:
 
 ```hcl
 cf_api_url  = "https://api.cloud.pcftest.com"
